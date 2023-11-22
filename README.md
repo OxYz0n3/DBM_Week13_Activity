@@ -9,6 +9,10 @@ This Python script demonstrates the creation and management of a company databas
 - Python 3
 - SQLite3
 
+## Relationships
+
+![alt text](https://github.com/OxYz0n3/DBM_Week13_Activity/main/screen.png?raw=true)
+
 ## Instructions
 
 1. **Database Setup**: The script begins by creating a SQLite database named "company.db" if it does not already exist.

@@ -1,0 +1,632 @@
+{
+	"tables": {
+		"8dddf759-766b-4ba2-9dc2-f549d298fa72": {
+			"id": "8dddf759-766b-4ba2-9dc2-f549d298fa72",
+			"visible": true,
+			"name": "Departements",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "0941ef44-e6ff-45cd-b02e-ec4ee8afbd13",
+					"name": "DepartementID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "1e01fd0d-d769-4cf6-a5b1-3a7a4cb7fbda",
+					"name": "DepartementName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"f4ed52dd-dc53-4aaf-8827-674bbfa48150",
+				"0cf90abf-63f7-4564-a724-f566bef1b82c"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2259a6ea-6569-49b0-8e6c-b364cdfd6a7a",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "38ba6f14-c428-406d-b3d4-fc73b184ba46",
+							"colid": "0941ef44-e6ff-45cd-b02e-ec4ee8afbd13"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			}
+		},
+		"93d2e436-a91a-41bb-98c3-df457cb3b66b": {
+			"id": "93d2e436-a91a-41bb-98c3-df457cb3b66b",
+			"visible": true,
+			"name": "Projects",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "dce86558-fc27-4ece-9f58-a5ac980bb40f",
+					"name": "ProjectID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "d57b8284-3e7d-4b63-a32e-9e0b7bd14597",
+					"name": "ProjectName",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "fc07a2d4-8f65-41bf-bdda-1738810108c8",
+					"name": "DepartementID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"f4ed52dd-dc53-4aaf-8827-674bbfa48150",
+				"a823af10-036b-4846-8bf3-3a30451c5f04"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b68fcc43-9dc5-499d-a123-f8e7cee15108",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "bfd16e9e-6b71-49bd-a3ae-587ef0fd365d",
+							"colid": "dce86558-fc27-4ece-9f58-a5ac980bb40f"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			}
+		},
+		"69febe7a-6e75-447f-b275-77eb41db2060": {
+			"id": "69febe7a-6e75-447f-b275-77eb41db2060",
+			"visible": true,
+			"name": "Employees",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d0429f5e-ca18-4a47-b383-13dbf2de38dc",
+					"name": "EmployeeID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "1c7c6357-def3-4c8d-a059-b336aaba4ead",
+					"name": "Name",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "c332b702-6314-4ff0-8909-401b6ecc19b7",
+					"name": "Position",
+					"datatype": "TEXT",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "fc15f115-0e2d-402b-8127-e1235c99120f",
+					"name": "DepartementID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "41f1de1a-f1a1-4872-b464-4f90d7088dff",
+					"name": "Salary",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"0cf90abf-63f7-4564-a724-f566bef1b82c",
+				"4852a0e5-aa11-4aaf-a1d9-5b96463610da"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "f55fdb29-f57e-467f-af8d-a016da61c8c8",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "aab534a9-a0f1-4cfa-8faf-0593fe92f8b2",
+							"colid": "d0429f5e-ca18-4a47-b383-13dbf2de38dc"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			}
+		},
+		"a3d82016-6513-4943-b32d-a0be0d337dc8": {
+			"id": "a3d82016-6513-4943-b32d-a0be0d337dc8",
+			"visible": true,
+			"name": "Assigments",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "0070c8a3-2144-47b7-b641-e0174de45e41",
+					"name": "EmployeeID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "5aacfa44-6ee2-44da-a008-5e8648ece501",
+					"name": "ProjectID",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "4822847f-500e-4e17-8a0d-0258f2483ed0",
+					"name": "HoursWorked",
+					"datatype": "INTEGER",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"sqlite": {
+						"autoincrement": false
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"4852a0e5-aa11-4aaf-a1d9-5b96463610da",
+				"a823af10-036b-4846-8bf3-3a30451c5f04"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "e9b3f0f7-ab3a-4018-9d98-442bfa9f8145",
+					"name": "Primary key",
+					"isPk": true,
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"sqlite": {
+				"withoutrowid": false,
+				"strict": false
+			}
+		}
+	},
+	"relations": {
+		"f4ed52dd-dc53-4aaf-8827-674bbfa48150": {
+			"id": "f4ed52dd-dc53-4aaf-8827-674bbfa48150",
+			"visible": true,
+			"name": "Departements_Projects",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2259a6ea-6569-49b0-8e6c-b364cdfd6a7a",
+			"parent": "8dddf759-766b-4ba2-9dc2-f549d298fa72",
+			"child": "93d2e436-a91a-41bb-98c3-df457cb3b66b",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "615984eb-1800-4dbf-9c7e-cf89fe185e68",
+					"parentcol": "0941ef44-e6ff-45cd-b02e-ec4ee8afbd13",
+					"childcol": "fc07a2d4-8f65-41bf-bdda-1738810108c8"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"0cf90abf-63f7-4564-a724-f566bef1b82c": {
+			"id": "0cf90abf-63f7-4564-a724-f566bef1b82c",
+			"visible": true,
+			"name": "Departements_Employees",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "2259a6ea-6569-49b0-8e6c-b364cdfd6a7a",
+			"parent": "8dddf759-766b-4ba2-9dc2-f549d298fa72",
+			"child": "69febe7a-6e75-447f-b275-77eb41db2060",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "1baef833-fef8-4703-8a19-212c4cb39814",
+					"parentcol": "0941ef44-e6ff-45cd-b02e-ec4ee8afbd13",
+					"childcol": "fc15f115-0e2d-402b-8127-e1235c99120f"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"4852a0e5-aa11-4aaf-a1d9-5b96463610da": {
+			"id": "4852a0e5-aa11-4aaf-a1d9-5b96463610da",
+			"visible": true,
+			"name": "Employees_Assigments",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "f55fdb29-f57e-467f-af8d-a016da61c8c8",
+			"parent": "69febe7a-6e75-447f-b275-77eb41db2060",
+			"child": "a3d82016-6513-4943-b32d-a0be0d337dc8",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "ddb84865-d87f-4ff2-9084-9a63bdd3d520",
+					"parentcol": "d0429f5e-ca18-4a47-b383-13dbf2de38dc",
+					"childcol": "0070c8a3-2144-47b7-b641-e0174de45e41"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"a823af10-036b-4846-8bf3-3a30451c5f04": {
+			"id": "a823af10-036b-4846-8bf3-3a30451c5f04",
+			"visible": true,
+			"name": "Projects_Assigments",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "b68fcc43-9dc5-499d-a123-f8e7cee15108",
+			"parent": "93d2e436-a91a-41bb-98c3-df457cb3b66b",
+			"child": "a3d82016-6513-4943-b32d-a0be0d337dc8",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "78e508d4-dc35-4138-a7ed-7dcc8c432b8f",
+					"parentcol": "dce86558-fc27-4ece-9f58-a5ac980bb40f",
+					"childcol": "5aacfa44-6ee2-44da-a008-5e8648ece501"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "group",
+		"id": "5255fe80-3998-4ac5-8881-800314a60da8",
+		"activeDiagram": "12713b5b-fb0f-4926-99cd-c577b4b08b9e",
+		"desc": "",
+		"path": "",
+		"type": "SQLITE",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 7,
+			"minor": 4,
+			"extra": 1
+		},
+		"laststoredin": {
+			"major": 7,
+			"minor": 4,
+			"extra": 1
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_coltopk": true,
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original"
+		},
+		"lastSaved": 1700637648083
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"12713b5b-fb0f-4926-99cd-c577b4b08b9e": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "12713b5b-fb0f-4926-99cd-c577b4b08b9e",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"8dddf759-766b-4ba2-9dc2-f549d298fa72": {
+					"referencedItemId": "8dddf759-766b-4ba2-9dc2-f549d298fa72",
+					"x": 535,
+					"y": 237,
+					"gHeight": 63,
+					"gWidth": 235,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"93d2e436-a91a-41bb-98c3-df457cb3b66b": {
+					"referencedItemId": "93d2e436-a91a-41bb-98c3-df457cb3b66b",
+					"x": 881,
+					"y": 250,
+					"gHeight": 81,
+					"gWidth": 233,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"69febe7a-6e75-447f-b275-77eb41db2060": {
+					"referencedItemId": "69febe7a-6e75-447f-b275-77eb41db2060",
+					"x": 495,
+					"y": 342,
+					"gHeight": 117,
+					"gWidth": 233,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"a3d82016-6513-4943-b32d-a0be0d337dc8": {
+					"referencedItemId": "a3d82016-6513-4943-b32d-a0be0d337dc8",
+					"x": 885,
+					"y": 372,
+					"gHeight": 81,
+					"gWidth": 224,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showHorizontal": true,
+			"showDescriptions": true,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"showIndicatorCaptions": true,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"embeddedSpacing": "2"
+		}
+	},
+	"order": [
+		"8dddf759-766b-4ba2-9dc2-f549d298fa72",
+		"93d2e436-a91a-41bb-98c3-df457cb3b66b",
+		"69febe7a-6e75-447f-b275-77eb41db2060",
+		"a3d82016-6513-4943-b32d-a0be0d337dc8",
+		"f4ed52dd-dc53-4aaf-8827-674bbfa48150",
+		"0cf90abf-63f7-4564-a724-f566bef1b82c",
+		"4852a0e5-aa11-4aaf-a1d9-5b96463610da",
+		"a823af10-036b-4846-8bf3-3a30451c5f04"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}

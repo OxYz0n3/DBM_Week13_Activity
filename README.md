@@ -11,7 +11,7 @@ This Python script demonstrates the creation and management of a company databas
 
 ## Relationships
 
-![alt text](https://github.com/OxYz0n3/DBM_Week13_Activity/main/screen.png?raw=true)
+![alt text](https://github.com/OxYz0n3/DBM_Week13_Activity/blob/master/screen.png?raw=true)
 
 ## Instructions
 
